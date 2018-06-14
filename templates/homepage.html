@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load store_format_tf %}
+
+{% block title %} Coffeehouse home page {% endblock %}
+{% block nobreadcrumb %}{% endblock %}
+{% block content %}
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Welcome !</h1>
+        {% with myvar="Expense Team" %}
+        {{myvar|customcoffee:"lead muted"}}
+        {% endwith%}
+      </div>
+
+{% endblock %}
+
